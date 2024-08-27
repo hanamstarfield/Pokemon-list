@@ -1,5 +1,5 @@
 #구조
-
+```bash
 src
  ┣ assets
  ┃ ┣ react.svg
@@ -21,7 +21,8 @@ src
  ┣ index.css
  ┣ main.jsx
  ┗ Mock.js
-
+```
+ 
 # 첫페이지
 ![image](https://github.com/user-attachments/assets/217c4eb9-637b-4573-8b09-653e5fd8e26f)
 1. 포켓몬도감 시작하기로 메인 페이지에 접속할 수 있다.
