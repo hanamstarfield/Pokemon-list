@@ -9,16 +9,17 @@ const Dex = () => {
   const [selectedPokemon, setSelectedPokemon] = useState([]);
 
   const addPokemon = (addpokemon) => {
+    if (selectedPokemon.length >= 6) {
+      alert("더 이상 추가할 수 없습니다!");
+      return;
+    }
+
     const duplicateCheck = selectedPokemon.some(
       (pokemon) => pokemon.id === addpokemon.id
     );
 
     if (duplicateCheck) {
       alert("이미 선택한 포켓몬입니다!");
-      return;
-    }
-    if (selectedPokemon.length >= 6) {
-      alert("더 이상 추가할 수 없습니다!");
       return;
     }
     setSelectedPokemon([...selectedPokemon, addpokemon]);
